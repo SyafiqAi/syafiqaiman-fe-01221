@@ -1,8 +1,11 @@
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
+import ChakraProvider from './ChakraProvider'
+import TopNavbar from "./components/TopNavbar";
+import { Box } from "@chakra-ui/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -12,13 +15,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav className="border border-red-500">Navbar</nav>
-        <div className="bg-slate-800 h-screen">
-          <StoreProvider>
-            {children}
-          </StoreProvider>
-        </div>
+      <body className={dmSans.className}>
+        <ChakraProvider>
+          <Box bg='black' color={'white'}>
+            <TopNavbar></TopNavbar>
+            <StoreProvider>
+              {children}
+            </StoreProvider>
+          </Box>
+        </ChakraProvider>
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchNewMovies } from "@/lib/features/searchMovies/searchMoviesSlice";
 
-export default function SearchMovies() {
+export default function NewReleases() {
     let dispatch = useDispatch();
     useEffect(() => {
         getNewReleases();

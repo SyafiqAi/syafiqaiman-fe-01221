@@ -10,7 +10,7 @@ export default function Home() {
           hello
         </p>
       </div>
-      <div className="bg-zinc-800">
+      <div>
         <NewReleases></NewReleases>
       </div>
     </div>
