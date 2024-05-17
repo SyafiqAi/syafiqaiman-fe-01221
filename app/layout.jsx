@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={dmSans.className}>
         <ChakraProvider>
-          <Box bg='black' color={'white'}>
+          <Box bg='#333333ff' color={'white'} minH={'100vh'}>
             <TopNavbar></TopNavbar>
             <StoreProvider>
               {children}
