@@ -4,8 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchNewMovies } from "@/lib/features/searchMovies/searchMoviesSlice";
 import { Box, Flex, GridItem, Progress, Spacer, Text, keyframes } from "@chakra-ui/react";
 import MovieGrid from "./MovieGrid";
-import MoviePreview from "./MoviePreview";
-import { SpinnerIcon } from '@chakra-ui/icons'
 import LoadingSpinner from "./LoadingSpinner";
 
 export default function NewReleases() {
