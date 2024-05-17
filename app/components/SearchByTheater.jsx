@@ -7,8 +7,8 @@ export default function SearchMovies() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        let query = e.target[0].value
-        dispatch(fetchMoviesByTheater(query))
+        let query = e.target[0].value;
+        dispatch(fetchMoviesByTheater(query));
     }
 
     return (
