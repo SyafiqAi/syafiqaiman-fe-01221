@@ -8,7 +8,7 @@ export default function TopNavbar() {
     const navPadding = 14
     
     return (
-        <Flex p={7} position='absolute' width={'full'} px={20} align={'center'}>
+        <Flex p={7} position='absolute' width={'full'} px={20} align={'center'} overflowX={'auto'}>
             <h1 className='inline'>
                 <Text fontSize='3xl' fontWeight={'bold'}>
                     PcariMovie
