@@ -4,6 +4,7 @@ import StoreProvider from "./StoreProvider";
 import ChakraProvider from './ChakraProvider'
 import TopNavbar from "./components/TopNavbar";
 import { Box } from "@chakra-ui/react";
+import Footer from "./components/Footer";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -18,10 +19,11 @@ export default function RootLayout({ children }) {
       <body className={dmSans.className}>
         <ChakraProvider>
           <Box bg='#333333ff' color={'white'} minH={'100vh'}>
-            <TopNavbar></TopNavbar>
+            <TopNavbar />
             <StoreProvider>
               {children}
             </StoreProvider>
+            <Footer />
           </Box>
         </ChakraProvider>
       </body>
