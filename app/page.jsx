@@ -21,7 +21,7 @@ export default function Home() {
   } else if (status === 'succeeded') {
     console.log(movies);
     content = movies.data.map(movie => {
-      return (<p>{movie['Title']}</p>)
+      return (<p key={movie.Movie_ID}>{movie['Title']}</p>)
     });
   } else if (status === 'failed') {
     content = <p>failed</p>
