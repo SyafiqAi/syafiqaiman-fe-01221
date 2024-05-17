@@ -19,7 +19,10 @@ export default function Home() {
   if (status === 'loading') {
     content = <p>loading</p>
   } else if (status === 'succeeded') {
-    content = <p>{movies}</p>
+    console.log(movies);
+    content = movies.data.map(movie => {
+      return (<p>{movie['Title']}</p>)
+    });
   } else if (status === 'failed') {
     content = <p>failed</p>
   }
