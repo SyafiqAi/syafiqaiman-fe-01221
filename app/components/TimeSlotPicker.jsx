@@ -23,7 +23,7 @@ export default function Picker() {
             onChange={(date) => setStartDate(date)}
             customInput={<ChakraCustomInput />}
             showTimeSelect
-            timeFormat="HH:mm"
+            timeFormat="h:mm aa"
             timeIntervals={15}
             timeCaption="Time"
             dateFormat="dd/MM/yyyy - h.mm aa"

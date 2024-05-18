@@ -13,11 +13,13 @@ export default function TopNavbar() {
     return (
         <Flex p={7} position='absolute' width={'full'} px={20} align={'center'} overflowY={'visible'} overflowX={'clip'} >
             <HStack spacing={14}>
-                <h1 className='inline'>
-                    <Text fontSize='3xl' fontWeight={'bold'}>
-                        PcariMovie
-                    </Text>
-                </h1>
+                <Link href={'/'}>
+                    <h1 className='inline'>
+                        <Text fontSize='3xl' fontWeight={'bold'}>
+                            PcariMovie
+                        </Text>
+                    </h1>
+                </Link>
                 <NavbarLink href='/'>
                     Home
                 </NavbarLink>
