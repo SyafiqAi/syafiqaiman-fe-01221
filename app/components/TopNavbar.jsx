@@ -1,14 +1,15 @@
 'use client'
 import { Link } from '@chakra-ui/next-js'
-import { Avatar, Box, Flex, Spacer, Text } from '@chakra-ui/react'
+import { Avatar, Box, Flex, Popover, Spacer, Text } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
+import NavbarSearchButton from './NavbarSearchButton'
 
 export default function TopNavbar() {
 
     const navPadding = 14
     
     return (
-        <Flex p={7} position='absolute' width={'full'} px={20} align={'center'} overflowX={'auto'}>
+        <Flex p={7} position='absolute' width={'full'} px={20} align={'center'} overflowY={'visible'} overflowX={'clip'} >
             <h1 className='inline'>
                 <Text fontSize='3xl' fontWeight={'bold'}>
                     PcariMovie
@@ -36,7 +37,8 @@ export default function TopNavbar() {
                 Contact Us
             </Link>
             <Spacer />
-            <Search2Icon ml={navPadding}/>
+            
+            <NavbarSearchButton />
             <Avatar size='sm' name='John Glich'  ml={navPadding} />
             <Text ml={4}>John Glich</Text>
 
