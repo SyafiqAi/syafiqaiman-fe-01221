@@ -4,7 +4,7 @@ import { Flex, Box } from '@chakra-ui/react';
 
 export default function HeroTemplate({ children }) {
     return (
-        <Flex align={'center'} justify={'center'} border={'1px'} px={'10vw'}>
+        <Flex align={'center'} justify={'center'} px={'10vw'}>
             <div className="h-lvh flex justify-center items-center">
                 <Image priority src={PlayLogo} alt='play logo' height={'350'} />
             </div>

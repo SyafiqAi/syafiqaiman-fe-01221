@@ -9,8 +9,12 @@ export default function SearchMovies() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        let theater = e.target[0].value
+        let timeStart = e.target[1].value
+        let timeEnd = e.target[2].value
+        
         let query = e.target[0].value
-        dispatch(fetchMoviesByTimeSlot({ timeStart: '00', timeEnd: '00' }))
+        dispatch(fetchMoviesByTimeSlot({ theater, timeStart, timeEnd }))
     }
 
     return (

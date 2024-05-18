@@ -18,6 +18,10 @@ export default function SearchResults() {
       content = <p>failed</p>
   }
 
+  if (status === 'idle') {
+    return (<></>)
+  }
+  
   return (
       <Box bg={'#1e1e1eff'} p={'16'}>
           <Flex align={'center'}>
