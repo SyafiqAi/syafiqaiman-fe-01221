@@ -45,7 +45,7 @@ export default function Footer() {
                 </Stack>
                 <Stack flexDir={'row'} align={'center'} mt={24} spacing={8}>
                     <Flex align={'center'}>
-                        <Image src={LocationIcon} height={15} color="white" />
+                        <Image src={LocationIcon} style={{width:'auto', height:15}} color="white" alt="location icon" />
                         <Text fontSize={'sm'} ml={1}>8819 Ohio St. South Gate, California 90280</Text>
                     </Flex>
                     <Flex align={'center'}>

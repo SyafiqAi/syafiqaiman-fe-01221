@@ -7,9 +7,14 @@ export default function NewsletterInput() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        let email = e.target[0].value;
+
+        if (!email) {
+            return;
+        }
         toast({
             title: 'Subscribed.',
-            description: `We'll send newsletters to ${e.target[0].value}.`,
+            description: `We'll send newsletters to ${email}.`,
             status: 'success',
             duration: 3000,
             isClosable: true,

@@ -1,8 +1,9 @@
 'use client';
 import { useDispatch } from "react-redux";
 import { fetchMoviesByTheater } from '../../lib/features/searchMovies/searchMoviesSlice'
-import { Button, FormControl, Grid, HStack, Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, Grid, HStack, Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react";
 import { CalendarIcon, SearchIcon } from "@chakra-ui/icons";
+import DatePicker from "./DatePicker";
 
 export default function SearchMovies() {
     const dispatch = useDispatch()
@@ -18,20 +19,17 @@ export default function SearchMovies() {
         <form onSubmit={handleSubmit}>
             <FormControl>
                 <Stack spacing={4}>
-                    <Grid templateColumns={'3fr 2fr'} gap={4}>
-                        <InputGroup>
+                    <Flex>
+                        <InputGroup mr={4}>
                             <InputLeftElement>
                                 <SearchIcon color={'black'} mt={2} ml={4} />
                             </InputLeftElement>
                             <Input type="text" borderRadius={'full'} bg={'white'} color={'black'} placeholder="Search by theater" size={'lg'} />
                         </InputGroup>
-                        <InputGroup>
-                            <InputLeftElement>
-                                <CalendarIcon color={'black'} mt={2} ml={4} />
-                            </InputLeftElement>
-                            <Input type="text" borderRadius={'full'} bg={'white'} color={'black'} placeholder="23/12/2021" size={'lg'}  />
-                        </InputGroup>
-                    </Grid>
+                        <DatePicker />
+                    </Flex>
+
+                    
                     <Button
                         size={'lg'}
                         borderRadius={'full'} bg={'yellow'}
