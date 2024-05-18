@@ -8,7 +8,7 @@ export default function MoviePreview(props) {
     let genre = props.movie.Genre
     return (
         <Flex flexDir={'column'} p={5} h={'650px'} border={'1px'}>
-            <Box>
+            <Box bg={'yellow'} w={'fit-content'} p={2} color={'black'} borderRadius={'full'} textTransform={'capitalize'}>
                 <Text fontSize={'xs'}>{genre}</Text>
             </Box>
             <Spacer />
