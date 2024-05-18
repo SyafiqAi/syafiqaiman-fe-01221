@@ -1,6 +1,8 @@
 'use client';
 import { useDispatch } from "react-redux";
 import { fetchMoviesByTheater } from '../../lib/features/searchMovies/searchMoviesSlice'
+import { Button, FormControl, Grid, HStack, Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react";
+import { CalendarIcon, SearchIcon } from "@chakra-ui/icons";
 
 export default function SearchMovies() {
     const dispatch = useDispatch()
@@ -13,13 +15,34 @@ export default function SearchMovies() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" />
-            <button
-                aria-label="Search"
-                type='submit'
-            >
-                Search
-            </button>
+            <FormControl>
+                <Stack spacing={4}>
+                    <Grid templateColumns={'3fr 2fr'} gap={4}>
+                        <InputGroup>
+                            <InputLeftElement>
+                                <SearchIcon color={'black'} mt={2} ml={4} />
+                            </InputLeftElement>
+                            <Input type="text" borderRadius={'full'} bg={'white'} color={'black'} placeholder="Search by theater" size={'lg'} />
+                        </InputGroup>
+                        <InputGroup>
+                            <InputLeftElement>
+                                <CalendarIcon color={'black'} mt={2} ml={4} />
+                            </InputLeftElement>
+                            <Input type="text" borderRadius={'full'} bg={'white'} color={'black'} placeholder="23/12/2021" size={'lg'}  />
+                        </InputGroup>
+                    </Grid>
+                    <Button
+                        size={'lg'}
+                        borderRadius={'full'} bg={'yellow'}
+                        px={10}
+                        w={'fit-content'}
+                        aria-label="Search"
+                        type='submit'
+                    >
+                        Search
+                    </Button>
+                </Stack>
+            </FormControl>
         </form>
     )
 }
