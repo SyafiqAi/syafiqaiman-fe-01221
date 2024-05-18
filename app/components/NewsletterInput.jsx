@@ -1,19 +1,19 @@
-import { Box, Button, Flex, FormControl, FormLabel, Input, InputGroup, InputRightAddon, InputRightElement, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormLabel, Input, InputGroup, InputRightAddon, InputRightElement, Text, useToast } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
-function ArrowButton() {
-    return (
-        <Button type="submit" bg={'yellow'} mt={'auto'} mr='auto' size={'md'}>
-            <ArrowForwardIcon />
-        </Button>
-    )
-}
-
 export default function NewsletterInput() {
+
+    const toast = useToast();
+
     function handleSubmit(e) {
         e.preventDefault();
-        alert('submitted')
-        console.log(e)
+        toast({
+            title: 'Subscribed.',
+            description: `We'll send newsletters to ${e.target[0].value}.`,
+            status: 'success',
+            duration: 3000,
+            isClosable: true,
+        })
     }
 
     return (
@@ -27,7 +27,7 @@ export default function NewsletterInput() {
                         {/* <Box border={'1px'} width={'8'} height={'100%'} mt={'2'}>
 
                         </Box> */}
-                        <Button type="submit" bg={'#fed530ff'} size={'lg'} mt={6} mr={6}>
+                        <Button type="submit" bg={'yellow'} size={'lg'} mt={6} mr={6}>
                             <ArrowForwardIcon />
                         </Button>
                     </InputRightElement>
