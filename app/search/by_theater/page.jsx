@@ -32,7 +32,7 @@ export default function SearchByTheater() {
                     
                     <Button
                         size={'lg'}
-                        borderRadius={'full'} bg={'yellow'}
+                        borderRadius={'full'} bg={'secondary.yellow'}
                         px={10}
                         w={'fit-content'}
                         aria-label="Search"

@@ -11,8 +11,8 @@ export default function MoviePreview(props) {
         <Box h={'650px'} bgImage={image} bgSize={'cover'} position={'relative'}>
             {/* <Box h={'full'} w={'full'} border={'1px'} position={'absolute'} display={'block'} bgGradient='linear(to-r, green.200, pink.500)' top={0} left={0} zIndex={0}>
             </Box> */}
-            <Flex position={'absolute'} top={0} left={0} flexDir={'column'} p={5} h={'full'} w={'full'} bgGradient='linear(to-b, #ffffff00, #000000aa)' >
-                <Box bg={'yellow'} w={'fit-content'} p={2} color={'black'} borderRadius={'full'} textTransform={'capitalize'}>
+            <Flex position={'absolute'} top={0} left={0} flexDir={'column'} p={5} h={'full'} w={'full'} bgGradient='linear(to-b, #00000000, #000000aa)' >
+                <Box bg={'secondary.yellow'} w={'fit-content'} p={2} color={'black'} borderRadius={'full'} textTransform={'capitalize'}>
                     <Text fontSize={'s'}>{genre}</Text>
                 </Box>
                 <Spacer />

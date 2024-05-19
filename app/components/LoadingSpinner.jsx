@@ -11,7 +11,7 @@ const spinAnimation = `${spin} infinite 2s linear`;
 export default function LoadingSpinner() {
     return (
         <Flex justify={'center'}>
-            <SpinnerIcon color='yellow' animation={spinAnimation} boxSize={20}/>
+            <SpinnerIcon color='secondary.yellow' animation={spinAnimation} boxSize={20}/>
         </Flex>
     )
 }

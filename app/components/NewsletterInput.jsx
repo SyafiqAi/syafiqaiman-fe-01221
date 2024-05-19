@@ -32,7 +32,7 @@ export default function NewsletterInput() {
                         {/* <Box border={'1px'} width={'8'} height={'100%'} mt={'2'}>
 
                         </Box> */}
-                        <Button type="submit" bg={'yellow'} size={'lg'} mt={6} mr={6}>
+                        <Button type="submit" bg={'secondary.yellow'} size={'lg'} mt={6} mr={6}>
                             <ArrowForwardIcon />
                         </Button>
                     </InputRightElement>

@@ -7,7 +7,7 @@ export default function NavbarSearchButton() {
         <Popover placement='bottom' id='popoverContent' trigger="hover">
             <PopoverTrigger>
                 <Link href="/search/by_theater">
-                    <Search2Icon cursor={'pointer'} _hover={{ color: 'yellow' }} />
+                    <Search2Icon cursor={'pointer'} _hover={{ color: 'secondary.yellow' }} />
                 </Link>
             </PopoverTrigger>
             <PopoverContent color="black" w={'fit-content'} pr={'8'}>

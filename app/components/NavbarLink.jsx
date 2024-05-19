@@ -10,9 +10,9 @@ export default function NavbarLink(props) {
     return (
         <Link 
             href={href} 
-            _hover={{ borderBottom:'4px', borderColor:'yellow' }} 
+            _hover={{ borderBottom:'4px', borderColor:'secondary.yellow' }} 
             borderBottom={isActive(href) ? '4px' : ''}
-            borderColor={isActive(href) ? 'yellow' : ''}
+            borderColor={isActive(href) ? 'secondary.yellow' : ''}
         >
             {props.children}
         </Link>
