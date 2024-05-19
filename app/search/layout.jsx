@@ -1,5 +1,4 @@
 'use client';
-import SearchByTimeSlot from '../components/SearchByTimeSlot'
 import HeroTemplate from '../components/HeroTemplate';
 import SearchResults from '../components/SearchResults';
 import { Stack, Text } from '@chakra-ui/react';
