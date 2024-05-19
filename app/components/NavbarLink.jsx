@@ -13,6 +13,7 @@ export default function NavbarLink(props) {
             _hover={{ borderBottom:'4px', borderColor:'secondary.yellow' }} 
             borderBottom={isActive(href) ? '4px' : ''}
             borderColor={isActive(href) ? 'secondary.yellow' : ''}
+            fontWeight={isActive(href) ? 'bold' : ''}
         >
             {props.children}
         </Link>
