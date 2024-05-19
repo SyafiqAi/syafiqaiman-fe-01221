@@ -16,6 +16,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## 'Search' Pages
+
+Hover over the search icon in the navbar to get links for the 'search by theater' and 'search by timeslot' pages.
+
 ## Packages used:
 
 * Chakra UI
