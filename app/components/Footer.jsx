@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
         <Grid templateColumns={'2fr 3fr'}>
-            <Flex height={'40vw'} bg={'#3d3d3dff'} align={'center'} justify={'center'} flexDir={'column'}>
+            <Flex height={'40vw'} bg={'secondary.mediumGray'} align={'center'} justify={'center'} flexDir={'column'}>
                 <Stack spacing={10}>
                     <Text fontSize={'6xl'}>PcariMovie</Text>
                     <Text maxW={'20vw'}>
@@ -22,7 +22,7 @@ export default function Footer() {
                     <NewsletterInput />
                 </Stack>
             </Flex>
-            <Flex height={'40vw'} bg={'#2e2e2eff'} p={16} flexDir={'column'} justify={'center'}>
+            <Flex height={'40vw'} bg={'other.gray'} p={16} flexDir={'column'} justify={'center'}>
                 <Stack direction={'row'} spacing={36}>
                     <Stack spacing={8}>
                         <Text fontWeight={'black'}>Product</Text>

@@ -6,7 +6,21 @@ import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
   colors: {
-    yellow: '#fed530ff'
+    yellow: '#fed530ff',
+    primary: {
+      'darkGray': '#1e1e1eff',
+      'gold': '#525252ff',
+    },
+    secondary: {
+      'mediumGray': '#3d3d3dff'
+    },
+    text: {
+      'title': '#2e2e2eff',
+    },
+    other: {
+      'gray': '#2e2e2eff',
+      'imagePlaceholder': '#333333'
+    }
   },
 })
 

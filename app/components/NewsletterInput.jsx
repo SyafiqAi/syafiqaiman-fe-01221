@@ -27,7 +27,7 @@ export default function NewsletterInput() {
             <FormControl>
                 <FormLabel><Text fontWeight={'bold'}>Join Newsletters</Text></FormLabel>
                 <InputGroup>
-                    <Input pr={16} height={16} size={'lg'} variant='filled' bgColor={'#525252ff'} _focus={{ bg: '#2e2e2eff' }} _hover={{ bg: "#2e2e2eff" }} colorScheme="blue" placeholder="Insert your mail here" type="email" />
+                    <Input pr={16} height={16} size={'lg'} variant='filled' bgColor={'primary.gold'} _focus={{ bg: 'text.title' }} _hover={{ bg: "text.title" }} colorScheme="blue" placeholder="Insert your mail here" type="email" />
                     <InputRightElement>
                         {/* <Box border={'1px'} width={'8'} height={'100%'} mt={'2'}>
 

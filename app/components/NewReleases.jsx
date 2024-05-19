@@ -31,7 +31,7 @@ export default function NewReleases() {
     }
 
     return (
-        <Box bg={'#1e1e1eff'} p={'16'}>
+        <Box bg={'primary.darkGray'} p={'16'}>
             <Flex align={'center'}>
                 <Text fontSize={'6xl'} mb={10}>New Releases</Text>
                 <Spacer />
