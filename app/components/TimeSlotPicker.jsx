@@ -4,16 +4,17 @@ import "react-datepicker/dist/react-datepicker.css";
 import { InputGroup, InputLeftElement, Input } from "@chakra-ui/react";
 import { CalendarIcon, TimeIcon } from "@chakra-ui/icons";
 
-export default function Picker() {
+export default function TimeSlotPicker() {
     const [startDate, setStartDate] = useState(null);
+    // eslint-disable-next-line react/display-name
     const ChakraCustomInput = forwardRef(({ value, onClick }, ref) => (
 
         <InputGroup onClick={onClick} ref={ref}>
             <InputLeftElement>
                 <TimeIcon color={'black'} mt={2} ml={4} />
             </InputLeftElement>
-            <Input type="text" borderRadius={'full'} bg={'white'} color={'black'} placeholder="18/05/2024 - 11.00 PM" size={'lg'} value={value} onChange={() => null}/>
-                                                                                                    {/* there's an error when value is assigned but onChange is not handled. */}
+            <Input type="text" borderRadius={'full'} bg={'white'} color={'black'} placeholder="18/05/2024 - 11.00 PM" size={'lg'} value={value} onChange={() => null} />
+            {/* there's an error when value is assigned but onChange is not handled. */}
         </InputGroup>
     ));
 

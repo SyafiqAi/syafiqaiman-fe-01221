@@ -4,8 +4,9 @@ import "react-datepicker/dist/react-datepicker.css";
 import { InputGroup, InputLeftElement, Input } from "@chakra-ui/react";
 import { CalendarIcon } from "@chakra-ui/icons";
 
-export default function Picker() {
+export default function TheDatePicker() {
     const [startDate, setStartDate] = useState(null);
+    // eslint-disable-next-line react/display-name
     const ChakraCustomInput = forwardRef(({ value, onClick }, ref) => (
 
         <InputGroup onClick={onClick} ref={ref}>
