@@ -1,8 +1,12 @@
 import { SimpleGrid, GridItem } from "@chakra-ui/react";
 import MoviePreview from "./MoviePreview";
+import sampleData from "@/sample data/movies"
 
 export default function MovieGrid(props) {
     let movies = props.movies;
+    if (movies['error']) {
+        movies = sampleData;
+    }
     let colSpan = 1;
     let enlargeFirstItem = props.enlargeFirstItem || false;
     return (

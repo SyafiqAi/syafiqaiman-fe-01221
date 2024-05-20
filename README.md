@@ -20,6 +20,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Hover over the search icon in the navbar to get links for the 'search by theater' and 'search by timeslot' pages.
 
+Empty searches can be made, click the search button to display the search results.
+
 ## Packages used:
 
 * Chakra UI
@@ -31,3 +33,7 @@ Hover over the search icon in the navbar to get links for the 'search by theater
 * New Movies
 * TimeSlot
 * Specific Movie Theater
+
+## Movie API usage limit error
+
+The MovieGrid component (app/components/MovieGrid.jsx) displays sample data if an endpoint returns a usage limit error.
