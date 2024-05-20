@@ -9,13 +9,8 @@ import LoadingSpinner from "./LoadingSpinner";
 export default function NewReleases() {
     let dispatch = useDispatch();
     useEffect(() => {
-        getNewReleases();
         dispatch(fetchNewMovies());
     }, [])
-
-    function getNewReleases() {
-
-    }
 
     const status = useSelector(state => state.searchMovies.status)
     const movies = useSelector(state => state.searchMovies.movies)
