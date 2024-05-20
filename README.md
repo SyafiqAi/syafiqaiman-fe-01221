@@ -18,7 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 'Search' Pages
 
-Hover over the search icon in the navbar to get links for the 'search by theater' and 'search by timeslot' pages.
+Click the search icon in the navbar to go to the 'search by theater' page.
+Hover over the search icon to get links for the 'search by theater' and 'search by timeslot' pages.
 
 Empty searches can be made, click the search button to display the search results.
 
